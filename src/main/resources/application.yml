@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/entity-graph?serverTimezone=UTC
     username: root
-    password: Rhkr!636
+    password: password
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     show-sql: true
