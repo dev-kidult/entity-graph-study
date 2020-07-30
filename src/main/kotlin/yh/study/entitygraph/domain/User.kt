@@ -17,7 +17,7 @@ data class User(
         @Column
         var password: String? = null,
 
-        @OneToMany(mappedBy = "user", cascade = [CascadeType.ALL], orphanRemoval = true)
+        @OneToMany(mappedBy = "user", fetch = FetchType.EAGER, cascade = [CascadeType.ALL], orphanRemoval = true)
         var characters: MutableSet<GameCharacter>? = null
 ) {
     fun addCharacter(character: GameCharacter) {
